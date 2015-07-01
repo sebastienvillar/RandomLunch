@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4D0232DA1B43DB180030CA39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0232D91B43DB180030CA39 /* AppDelegate.swift */; };
-		4D0232DC1B43DB180030CA39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0232DB1B43DB180030CA39 /* ViewController.swift */; };
-		4D0232DF1B43DB180030CA39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D0232DD1B43DB180030CA39 /* Main.storyboard */; };
+		4D0232DA1B43DB180030CA39 /* MSAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0232D91B43DB180030CA39 /* MSAppDelegate.swift */; };
 		4D0232E11B43DB180030CA39 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D0232E01B43DB180030CA39 /* Images.xcassets */; };
-		4D0232E41B43DB180030CA39 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D0232E21B43DB180030CA39 /* LaunchScreen.xib */; };
 		4D0232F01B43DB180030CA39 /* RandomLunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0232EF1B43DB180030CA39 /* RandomLunchTests.swift */; };
+		4D0232FE1B43E2F70030CA39 /* MSFoursquareAPISession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0232FD1B43E2F70030CA39 /* MSFoursquareAPISession.swift */; };
+		4D0233001B43EE680030CA39 /* MSConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0232FF1B43EE680030CA39 /* MSConstant.swift */; };
+		4D0233021B43F0DB0030CA39 /* MSUserLocationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0233011B43F0DB0030CA39 /* MSUserLocationHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +28,14 @@
 /* Begin PBXFileReference section */
 		4D0232D41B43DB180030CA39 /* RandomLunch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomLunch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D0232D81B43DB180030CA39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4D0232D91B43DB180030CA39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4D0232DB1B43DB180030CA39 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4D0232DE1B43DB180030CA39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4D0232D91B43DB180030CA39 /* MSAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSAppDelegate.swift; sourceTree = "<group>"; };
 		4D0232E01B43DB180030CA39 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		4D0232E31B43DB180030CA39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		4D0232E91B43DB180030CA39 /* RandomLunchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomLunchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D0232EE1B43DB180030CA39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D0232EF1B43DB180030CA39 /* RandomLunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomLunchTests.swift; sourceTree = "<group>"; };
+		4D0232FD1B43E2F70030CA39 /* MSFoursquareAPISession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSFoursquareAPISession.swift; sourceTree = "<group>"; };
+		4D0232FF1B43EE680030CA39 /* MSConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSConstant.swift; sourceTree = "<group>"; };
+		4D0233011B43F0DB0030CA39 /* MSUserLocationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSUserLocationHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +77,8 @@
 		4D0232D61B43DB180030CA39 /* RandomLunch */ = {
 			isa = PBXGroup;
 			children = (
-				4D0232D91B43DB180030CA39 /* AppDelegate.swift */,
-				4D0232DB1B43DB180030CA39 /* ViewController.swift */,
-				4D0232DD1B43DB180030CA39 /* Main.storyboard */,
-				4D0232E01B43DB180030CA39 /* Images.xcassets */,
-				4D0232E21B43DB180030CA39 /* LaunchScreen.xib */,
+				4D0232FA1B43DE3E0030CA39 /* Application */,
+				4D0232FC1B43E2C90030CA39 /* Helpers */,
 				4D0232D71B43DB180030CA39 /* Supporting Files */,
 			);
 			path = RandomLunch;
@@ -90,6 +87,7 @@
 		4D0232D71B43DB180030CA39 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4D0232E01B43DB180030CA39 /* Images.xcassets */,
 				4D0232D81B43DB180030CA39 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -110,6 +108,24 @@
 				4D0232EE1B43DB180030CA39 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4D0232FA1B43DE3E0030CA39 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				4D0232D91B43DB180030CA39 /* MSAppDelegate.swift */,
+				4D0232FF1B43EE680030CA39 /* MSConstant.swift */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		4D0232FC1B43E2C90030CA39 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4D0232FD1B43E2F70030CA39 /* MSFoursquareAPISession.swift */,
+				4D0233011B43F0DB0030CA39 /* MSUserLocationHelper.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +177,7 @@
 				TargetAttributes = {
 					4D0232D31B43DB180030CA39 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = 42RQ2PT58Z;
 					};
 					4D0232E81B43DB180030CA39 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -192,8 +209,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D0232DF1B43DB180030CA39 /* Main.storyboard in Resources */,
-				4D0232E41B43DB180030CA39 /* LaunchScreen.xib in Resources */,
 				4D0232E11B43DB180030CA39 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,8 +227,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D0232DC1B43DB180030CA39 /* ViewController.swift in Sources */,
-				4D0232DA1B43DB180030CA39 /* AppDelegate.swift in Sources */,
+				4D0232FE1B43E2F70030CA39 /* MSFoursquareAPISession.swift in Sources */,
+				4D0233021B43F0DB0030CA39 /* MSUserLocationHelper.swift in Sources */,
+				4D0233001B43EE680030CA39 /* MSConstant.swift in Sources */,
+				4D0232DA1B43DB180030CA39 /* MSAppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,25 +252,6 @@
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		4D0232DD1B43DB180030CA39 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4D0232DE1B43DB180030CA39 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		4D0232E21B43DB180030CA39 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4D0232E31B43DB180030CA39 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		4D0232F11B43DB180030CA39 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -272,6 +270,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -316,6 +315,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -340,6 +340,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = RandomLunch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -350,6 +353,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = RandomLunch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
